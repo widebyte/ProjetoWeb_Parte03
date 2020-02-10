@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1580698066416' stop='1580698067522'>
+    <name>Acessar página de cada produto</name>
+    <title>Acessar página de cada produto</title>
+    <test-cases>
+        <test-case start='1580698066416' status='broken' stop='1580698067521'>
+            <name>Acessar pagina - Seguro Auto</name>
+            <title>Acessar pagina - Seguro Auto</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Options must be an oject</message>
+                <stack-trace>TypeError: Options must be an oject
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Context.&lt;anonymous> (/Users/rafaelbarbosa/Desktop/Projeto Parte 03/webdriverio-test/test/specs/test_login.js:53:83)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
