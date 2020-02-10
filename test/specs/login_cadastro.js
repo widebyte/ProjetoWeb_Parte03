@@ -17,10 +17,10 @@ describe('Acessar o site da Youse', () => {
     describe('Cadastrando usuario na Youse', () => {
         it('Cadastrar um novo usuario', function (){
             $('/html/body/div[2]/a[1]').click();            
-            $('//*[@id="user_name"]').addValue('Fulano da Silva');
-            $('//*[@id="user_email"]').addValue('widefun@outlook.com');
-            $('//*[@id="user_password"]').addValue('Dev#001@');
-            $('//*[@id="user_password_confirmation"]').addValue('Dev#001@');
+            $('//*[@id="user_name"]').addValue('username_cadastrado');
+            $('//*[@id="user_email"]').addValue('email_cadastrado');
+            $('//*[@id="user_password"]').addValue('senha_cadastrada');
+            $('//*[@id="user_password_confirmation"]').addValue('confirmar_senha_cadastrada');
             $('/html/body/div[2]/article/form/div/input').click();
             browser.pause(2000);            
         });
@@ -37,10 +37,10 @@ describe('Realizar login na Youse', () => {
         //assert.strictEqual(title, 'Seguro Auto, Residencial e Vida | Youse, Seguros Online Tipo Vc')
         $('/html/body/div[1]/div[1]/div/div[1]/div/div/div[2]/a').click();
         browser.pause(1500);
-        $('//*[@id="email"]').addValue('widefun@outlook.com')
+        $('//*[@id="email"]').addValue('email_cadastrado')
         $('/html/body/div[2]/article/form/div/input').click();
         browser.pause(1000);
-        $('//*[@id="user_password"]').addValue('Dev#001@');
+        $('//*[@id="user_password"]').addValue('senha_cadastrada');
         $('/html/body/div[2]/article/form/div/input').click();
         browser.pause(1000);
         var pageUrl = browser.getUrl();
