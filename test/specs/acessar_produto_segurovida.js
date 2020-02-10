@@ -6,10 +6,10 @@ describe('Selenionar Produto - Seguro de Vida', () => {
         //browser.pause(1000); //pause para aguardar o carragamento da página de Login do usuário.
         console.log(browser.getUrlAndTitle());
 
-        $('//*[@id="email"]').addValue('widefun@outlook.com'); //Entrar com o e-mail cadastrado.      
+        $('//*[@id="email"]').addValue('login_cadastrado'); //Entrar com o e-mail cadastrado.      
         $('/html/body/div[2]/article/form/div/input').click(); //clicar no botão Próximo Passo.
         browser.pause(1000);        
-        $('//*[@id="user_password"]').addValue('Dev#001@');
+        $('//*[@id="user_password"]').addValue('senha_cadastrada');
         browser.pause(1000);        
         $('/html/body/div[2]/article/form/div/input').click();
         browser.pause(1000);     
