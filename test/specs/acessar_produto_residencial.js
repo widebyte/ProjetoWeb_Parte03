@@ -7,10 +7,10 @@ describe('Selenionar Produto', () => {
         browser.url('https://youse.com.br'); //acessar o site da youse.
         $('/html/body/div[1]/div[1]/div/div[1]/div/div/div[2]/a').click(); //CSS para clicar no ícone de acesso.
         browser.pause(1000); //pause para aguardar o carragamento da página de Login do usuário.
-        $('//*[@id="email"]').addValue('widefun@outlook.com'); //preenchendo o campo E-mail.
+        $('//*[@id="email"]').addValue('email_cadastrado'); //preenchendo o campo E-mail.
         $('/html/body/div[2]/article/form/div/input').click(); // clicando no botão PRÓXIMO PASSO.
         browser.pause(1000); //aguardar o aparecimento do campo senha.
-        $('//*[@id="user_password"]').addValue('Dev#001@'); //preenchendo o campo da senha.
+        $('//*[@id="user_password"]').addValue('senha_cadastrada'); //preenchendo o campo da senha.
         $('/html/body/div[2]/article/form/div/input').click(); //clicando no botão ENTRAR.
         browser.pause(1000);
         var pageUrl = browser.getUrl(); //verificar o carregamento da página logada.
