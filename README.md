@@ -8,7 +8,7 @@ Neste projeto teste foram utilizadas ferramentas de automação de processos par
 * Realizar a cotação de um seguro.
 
 ### Pendências
-Neste projeto foi requisitado o Page Objects. Contudo, consegui montar neste projeto, onde consta na pasta **classes**, entretanto, tive alguns erros com as requisições das páginas. Sendo assim, deixei este códigos para que a equipe possa avaliar e indicar melhorias. Se preferirem e solicitarem, posso reenviar este mesmo projeto com o Page Object, pois estou reestruturando e estudando uma melhor entrega para a equipe se for solicitada novamente.
+Neste projeto foi requisitado o Page Objects. Contudo, consegui montar neste projeto, onde consta na pasta **classes**, entretanto, tive alguns erros com as requisições das páginas. Sendo assim, deixei estes códigos para que a equipe possa avaliar e indicar melhorias. Se preferirem e solicitarem, posso reenviar este mesmo projeto com o Page Object corrigido, pois estou reestruturando e estudando uma melhor entrega para a equipe se for solicitada novamente.
 
 ### Ferramentas utlizadas
 
@@ -16,13 +16,13 @@ Neste projeto foi requisitado o Page Objects. Contudo, consegui montar neste pro
 O **Mocha** é uma estrutura de teste JavaScript rica em recursos, executada no Node.js e no navegador onde torna os testes de forma simples e assíncrona. Os testes **Mocha** são executados em série, permitindo relatórios flexíveis e precisos, enquanto mapeiam exceções não capturadas para os casos de teste corretos. 
 
 #### WebDriverIO
-O WebdriverIO é uma estrutura de automação de teste que permite executar testes com base no protocolo Webdriver e na tecnologia de automação Appium. Ele fornece suporte para sua estrutura de teste BDD / TDD favorita e executará seus testes localmente ou na nuvem usando Sauce Labs, BrowserStack ou TestingBot.
+O WebDriverio foi outra ferramenta utilizada neste projeto, onde esta estrutura de automação de teste nos permite executar testes com base no protocolo Webdriver e na tecnologia de automação Appium. Ele fornece suporte para sua estrutura de teste BDD / TDD dependendo da sua utilidade e executa seus testes localmente ou na nuvem usando Sauce Labs, BrowserStack ou TestingBot.
 
 ### Dando o primeiro passo
-Você precisará do Node.js instalado (pelo menos v8.11.2 ou superior). Se você não possui o Node instalado, é recomendado a instalação do NVM para ajudar no gerenciamento de várias versões ativas do Node.js.
+Para rodar este projeto, será necessário ter o Node.js instalado (pelo menos v8.11.2 ou superior) em sua máquina. Se você não possui o Node instalado, é recomendado a instalação do NVM para ajudar no gerenciamento de várias versões ativas do Node.js (como preferir).
 
 ### Configurando o projeto
-Antes de instalar dependências, você precisará inicializar um novo projeto do NPM. Isso permitirá que você use a CLI para instalar dependências no seu projeto.
+Antes de instalar dependências, você precisará inicializar um novo projeto através do NPM. Isso permitirá que você use a CLI para instalar dependências no seu projeto.
 
 Para fazer isso, abra o terminal de sua máquina e execute o seguinte comando abaixo:
 ````shell
@@ -30,16 +30,16 @@ mkdir webdriverio-test && cd webdriverio-test
 npm init -y
 ````
 ### Instale a WebdriverIO CLI
-Se você deseja usar o WebdriverIO em seu projeto para teste de integração, é recomendado o uso do executor de teste. Ele vem com muitos recursos úteis que facilitam a sua vida na hora da codificação.
+Para este projeto de teste de integração, é recomendado o uso do executor de teste. Ele vem com muitos recursos úteis que facilitam a sua vida na hora da codificação do seu projeto.
 
-Desde o WebdriverIO versão 5, o testrunner está no @wdio/clipacote NPM.
+Desde o WebdriverIO versão 5, o testrunner está no **@wdio/clipacote NPM.**
 
 Agora, instale a CLI abaixo:
 ````shell
 npm i --save-dev @wdio/cli
 ````
 ### Gerar arquivo de configuração
-Em seguida, você gerará um arquivo de configuração para armazenar suas configurações do WebdriverIO.
+Em seguida, você deverá gerar um arquivo de configuração para armazenar suas configurações do WebdriverIO.
 
 Para fazer isso, basta executar o utilitário de configuração abaixo:
 ````shell
